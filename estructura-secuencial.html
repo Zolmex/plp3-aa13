@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <button onclick="perimetro()">Perimetro</button>
+    <button onclick="numeros1()">Numeros1</button>
+    <button onclick="numeros2()">Numeros2</button>
+    <button onclick="precio()">Precio</button>
+    <script type="text/javascript">
+        function perimetro() {
+            let lado = parseInt(prompt("1. Ingrese el lado del cuadrado (en cm)"));
+            let perimetro = lado * 4;
+            document.write("Perimetro del cuadrado: " + perimetro);
+            document.write("<br>");
+        }
+
+        function numeros1() {
+            let primer = parseInt(prompt("Ingrese el primer numero"));
+            let segundo = parseInt(prompt("Ingrese el segundo numero"));
+            let tercer = parseInt(prompt("Ingrese el tercer numero"));
+            let cuarto = parseInt(prompt("Ingrese el cuarto numero"));
+            document.write("Suma del 1ro y 2do: " + (primer + segundo));
+            document.write("<br>");
+            document.write("Producto del 3ro y 4to: " + (tercer * cuarto));
+            document.write("<br>");
+        }
+
+        function numeros2() {
+            let primer = parseInt(prompt("Ingrese el primer numero"));
+            let segundo = parseInt(prompt("Ingrese el segundo numero"));
+            let tercer = parseInt(prompt("Ingrese el tercer numero"));
+            let cuarto = parseInt(prompt("Ingrese el cuarto numero"));
+            document.write("Suma: " + (primer + segundo + tercer + cuarto));
+            document.write("<br>");
+            document.write("Producto: " + (tercer * cuarto * tercer * cuarto));
+            document.write("<br>");
+        }
+
+        function precio() {
+            let precio = parseInt(prompt("Ingrese el precio del producto"));
+            let cantidad = parseInt(prompt("Ingrese la cantidad"));
+            let total = precio * cantidad;
+            document.write("El total a abonar es de " + total);
+            document.write("<br>");
+        }
+    </script>
+</body>
+
+</html>
