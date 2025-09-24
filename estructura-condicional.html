@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <button onclick="promedio()">Promedio</button>
+    <button onclick="clave()">clave</button>
+    <script type="text/javascript">
+        function promedio() {
+            let nota1 = parseInt(prompt("Ingrese su primer nota"));
+            let nota2 = parseInt(prompt("Ingrese su segunda nota"));
+            let nota3 = parseInt(prompt("Ingrese su tercer nota"));
+            let promedio = (nota1 + nota2 + nota3) / 3;
+            if (promedio >= 7) {
+                document.write("Promocionado");
+            }
+            else if (promedio >= 6) {
+                document.write("Aprobado. No promocionado");
+            }
+            else {
+                document.write("Desaprobado");
+            }
+        }
+
+        function clave() {
+            let clave1 = prompt("Ingrese la primer clave");
+            let clave2 = prompt("Ingrese la segunda clave");
+            if (clave1 == clave2){
+                document.write("Las claves son iguales");
+            }
+            else {
+                document.write("Las claves NO son iguales");
+            }
+        }
+    </script>
+</body>
+
+</html>
