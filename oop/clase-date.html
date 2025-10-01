@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <button onclick="cuatrimestre()">Cuatrimestre</button>
+    <script type="text/javascript">
+        function cuatrimestre() {
+            let mes = new Date().getMonth();
+            let cuatrimestre = mes/4;
+            document.write("Estamos en el mes " + mes + ", cuatrimestre " + (Math.ceil(cuatrimestre) + 1));
+        }
+    </script>
+</body>
+
+</html>
