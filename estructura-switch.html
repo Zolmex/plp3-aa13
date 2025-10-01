@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <button onclick="palabrasClave()">Palabras clave</button>
+    <script type="text/javascript">
+        function palabrasClave() {
+            let palabra = prompt("Ingrese 'casa', 'mesa', 'perro', o 'gato'");
+            switch (palabra){
+                case 'casa':
+                    document.write("Traducción: house");
+                    break;
+                case 'mesa':
+                    document.write("Traducción: table");
+                    break;
+                case 'perro':
+                    document.write("Traducción: dog");
+                    break;
+                case 'gato':
+                    document.write("Traducción: cat");
+                    break;
+                default:
+                    document.write("Palabra inválida");
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>
