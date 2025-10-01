@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <button onclick="nombres()">Ingresar nombres</button>
+    <script type="text/javascript">
+        function nombres() {
+            let num = 0;
+            let nombre = prompt("Ingrese un nombre o 'Fin' para terminar");
+            while (nombre != "Fin") {
+                num++;
+                nombre = prompt("Ingrese un nombre o 'Fin' para terminar");
+            }
+            document.write("Se ingresaron " + num + " nombres");
+        }
+    </script>
+</body>
+
+</html>
