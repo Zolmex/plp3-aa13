@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <form>
+        <label for="name">Nombre</label>
+        <input type="text" id="name" placeholder="Nombre"><br>
+        <label for="mail">Mail</label>
+        <input type="text" id="mail" placeholder="Mail"><br>
+        <label for="comments">Comentarios</label><br>
+        <textarea id="comments"></textarea><br>
+        <input type="button" onclick="mostrarDatos()" value="Mostrar">
+    </form>
+    <p id="precio"></p>
+    <script type="text/javascript">
+        function mostrarDatos() {
+            let nombre = document.getElementById("name").value;
+            let mail = document.getElementById("mail").value;
+            let comentarios = document.getElementById("comments").value;
+            alert(
+                "Nombre: " + nombre + "\n" +
+                "Mail: " + mail + "\n" +
+                "Comentarios: " + comentarios
+            );
+        }
+    </script>
+</body>
+
+</html>
