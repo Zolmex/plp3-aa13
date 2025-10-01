@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <button onclick="vectorAcumulado()">Vector acumulado</button>
+    <script type="text/javascript">
+        function vectorAcumulado() {
+            let vector = [];
+            let suma36 = 0;
+            let suma50 = 0;
+            for (let i = 0; i < 8; i++) {
+                let num = parseInt(prompt("Ingrese el elemento del vector"));
+                if (num > 50) {
+                    suma50 += num;
+                }
+                else if (num > 36) {
+                    suma36 += num;
+                }
+                vector.push(num);
+            }
+            for (let i = 0; i < vector.length; i++) {
+                document.write(vector[i] + "<br>");
+            }
+            document.write("Suma de valores mayores a 36: " + suma36 + "<br>");
+            document.write("Suma de valores mayores a 50: " + suma50);
+        }
+    </script>
+</body>
+
+</html>
