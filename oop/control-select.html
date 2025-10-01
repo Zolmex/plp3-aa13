@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <form>
+        <input type="radio" onClick="mostrarPrecio('jamon')" id="jamon" name="pizza">
+        <label for="jamon" value="Jamón">Jamón</label><br>
+        <input type="radio" onClick="mostrarPrecio('queso')" id="queso" name="pizza">
+        <label for="queso" value="Queso">Queso</label><br>
+        <input type="radio" onClick="mostrarPrecio('muzzarella')" id="muzzarella" name="pizza">
+        <label for="muzzarella" value="Muzzarella">Muzarrella</label><br>
+        <input type="radio" onClick="mostrarPrecio('morrones')" id="morrones" name="pizza">
+        <label for="morrones" value="Morrones">Morrones</label><br>
+        <label id="precio"></label>
+    </form>
+    <script type="text/javascript">
+        function mostrarPrecio(pizza) {
+            let precio = 0;
+            switch (pizza) {
+                case "jamon":
+                    precio = 1500;
+                    break;
+                case "queso":
+                    precio = 1200;
+                    break;
+                case "muzzarella":
+                    precio = 1300;
+                    break;
+                case "morrones":
+                    precio = 1400;
+                    break;
+            }
+            document.getElementById("precio").innerHTML = precio;
+        }
+    </script>
+</body>
+
+</html>
