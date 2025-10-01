@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <form>
+        <input type="radio" id="mayor" name="mayorMenorEdad">
+        <label for="mayor" value="Jamón">Mayor de 18 años</label><br>
+        <input type="radio" id="menor" name="mayorMenorEdad">
+        <label for="menor" value="Queso">Menor de edad</label><br>
+        <input type="button" onclick="mostrarAlert()" value="OK">
+    </form>
+    <script type="text/javascript">
+        function mostrarAlert() {
+            let seleccionId = document.querySelector("input[name='mayorMenorEdad']:checked").id;
+            if (seleccionId == "mayor") {
+                alert("Usted es mayor de edad");
+            }
+            else if (seleccionId == "menor") {
+                alert("Usted es menor de edad");
+            }
+            else {
+                alert("Error interno.");
+            }
+        }
+    </script>
+</body>
+
+</html>

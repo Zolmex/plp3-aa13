@@ -6,31 +6,28 @@
 </head>
 
 <body>
-    <form>
-        <input type="radio" onClick="mostrarPrecio('jamon')" id="jamon" name="pizza">
-        <label for="jamon" value="Jamón">Jamón</label><br>
-        <input type="radio" onClick="mostrarPrecio('queso')" id="queso" name="pizza">
-        <label for="queso" value="Queso">Queso</label><br>
-        <input type="radio" onClick="mostrarPrecio('muzzarella')" id="muzzarella" name="pizza">
-        <label for="muzzarella" value="Muzzarella">Muzarrella</label><br>
-        <input type="radio" onClick="mostrarPrecio('morrones')" id="morrones" name="pizza">
-        <label for="morrones" value="Morrones">Morrones</label><br>
-        <label id="precio"></label>
-    </form>
+    <select name="pizza" id="pizza" onchange="mostrarPrecio()" onfocus="this.selectedIndex = -1;">
+        <option value="jamon">Jamón</option>
+        <option value="queso">Queso</option>
+        <option value="muzzarella">Muzzarella</option>
+        <option value="morrones">Morrones</option>
+    </select>
+    <p id="precio"></p>
     <script type="text/javascript">
-        function mostrarPrecio(pizza) {
+        function mostrarPrecio() {
             let precio = 0;
-            switch (pizza) {
-                case "jamon":
+            let select = document.getElementById("pizza");
+            switch (select.selectedIndex) {
+                case 0:
                     precio = 1500;
                     break;
-                case "queso":
+                case 1:
                     precio = 1200;
                     break;
-                case "muzzarella":
+                case 2:
                     precio = 1300;
                     break;
-                case "morrones":
+                case 3:
                     precio = 1400;
                     break;
             }
