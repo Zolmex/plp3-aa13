@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <button onclick="numeroMayor()">Número entero mayor</button>
+    <script type="text/javascript">
+        function numeroMayor() {
+            let num1 = parseInt(prompt("Ingrese el primer número"));
+            let num2 = parseInt(prompt("Ingrese el segundo número"));
+            let num3 = parseInt(prompt("Ingrese el tercer número"));
+            let mayor = mostrarMayor(num1, num2, num3);
+            document.write("El número mayor es: " + mayor);
+        }
+
+        function mostrarMayor(num1, num2, num3) {
+            let mayor = -1;
+            if (num1 > num2 && num1 > num3) {
+                mayor = num1;
+            }
+            if (num2 > num1 && num2 > num3) {
+                mayor = num2;
+            }
+            if (num3 > num2 && num3 > num1) {
+                mayor = num3;
+            }
+            return mayor;
+        }
+    </script>
+</body>
+
+</html>
