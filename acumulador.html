@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <button onclick="acumulador()">Acumulador</button>
+    <script type="text/javascript">
+        function acumulador() {
+            let i = 0;
+            let menores = 0;
+            let mayoresIguales = 0;
+            while (i < 10) {
+                let nota = parseInt(prompt("Ingrese la nota de alumno"));
+                if (nota < 7){
+                    menores++;
+                }
+                else {
+                    mayoresIguales++;
+                }
+                i++;
+            }
+            document.write(menores + " alumnos tienen una nota inferior a 7. " + mayoresIguales + " alumnos tienen una nota igual o mayor a 7");
+        }
+    </script>
+</body>
+
+</html>

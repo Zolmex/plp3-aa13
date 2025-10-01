@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <button onclick="cuentaCorriente()">Cuenta Corriente</button>
+    <script type="text/javascript">
+        function cuentaCorriente() {
+            let numCuenta;
+            let nombreCliente;
+            let saldoCuenta;
+            let saldoAcreedores = 0;
+            do {
+                numCuenta = parseInt(prompt("Ingrese el número de la cuenta"));
+                nombreCliente = prompt("Ingrese el nombre del cliente");
+                saldoCuenta = parseInt(prompt("Ingrese el saldo de la cuenta"));
+                estadoCuenta = "";
+
+                if (numCuenta >= 0 && saldoCuenta > 0) {
+                    saldoAcreedores += saldoCuenta;
+                }
+
+            } while (numCuenta >= 0);
+            document.write("Saldo total de acreedores: " + saldoAcreedores);
+        }
+    </script>
+</body>
+
+</html>
