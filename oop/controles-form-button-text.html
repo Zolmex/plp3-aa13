@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <form>
+        <label for="num">Número</label><br>
+        <input type="text" id="num" name="num"><br>
+        <input type="button" onclick="enviarNumero()" value="Enviar" id="button">
+    </form>
+    <script type="text/javascript">
+        function enviarNumero() {
+            let valor = parseInt(document.getElementById("num").value);
+            var potencia = Math.pow(valor, 3);
+            alert("El cubo de " + valor + " es de: " + potencia);
+        }
+    </script>
+</body>
+
+</html>
