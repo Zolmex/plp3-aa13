@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <button onclick="cargaNumeros()">Cargar números</button>
+    <script type="text/javascript">
+        function cargaNumeros() {
+            let menor = parseInt(prompt("Ingrese el número menor"));
+            let mayor = parseInt(prompt("Ingrese el número mayor"));
+            for (let i = menor; i <= mayor; i++) {
+                document.write(i + "<br>");
+            }
+        }
+    </script>
+</body>
+
+</html>
