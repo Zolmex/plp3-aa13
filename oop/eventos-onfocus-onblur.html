@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <form>
+        <label for="name">Nombre</label>
+        <input type="text" id="name" placeholder="Nombre"><br>
+        <label for="passw">Clave</label>
+        <input type="password" id="passw" placeholder="Clave" onBlur="mostrarAlerta()">
+    </form>
+    <script type="text/javascript">
+        function mostrarAlerta() {
+            const clave = document.getElementById('passw').value;
+            if (clave.length < 7 || clave.length > 20) {
+                alert("Alerta!!! Clave muy corta o muy larga!");
+            }
+        }
+    </script>
+</body>
+
+</html>

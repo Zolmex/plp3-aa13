@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <a href="#" onmouseover="pintar('#00FF00')" onmouseout="pintar('#0')">Rojo</a>
+    <a href="#" onmouseover="pintar('#FF0000')" onmouseout="pintar('#0')">Verde</a>
+    <a href="#" onmouseover="pintar('#0000FF')" onmouseout="pintar('#0')">Azul</a>
+    <div id="cuadro" style="background: black; width: 50px; height: 50px;"></div>
+    <script type="text/javascript">
+        function pintar(color) {
+            const cuadro = document.getElementById('cuadro');
+            cuadro.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
