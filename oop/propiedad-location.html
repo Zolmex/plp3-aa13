@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <button onclick="valorAleatorio()">Valor aleatorio</button>
+    <script type="text/javascript">
+        function valorAleatorio() {
+            let num = Math.random() * 3;
+            num = parseInt(num);
+            if (num == 0) {
+                window.location = "https://outlook.com";
+            }
+            if (num == 1) {
+                window.location = "https://gmail.com";
+            }
+            else {
+                window.location = "https://yahoo.com";
+            }
+        }
+    </script>
+</body>
+
+</html>
